@@ -3,7 +3,6 @@ import java.awt.TextArea;
 // import java.awt.TextField;
 import java.awt.Button;
 import java.awt.FlowLayout;
-import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 // import java.awt.event.WindowListener;
 import java.awt.event.MouseAdapter;
