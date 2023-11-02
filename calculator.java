@@ -11,31 +11,26 @@ public class calculator extends Frame {
     TextField tf = new TextField();
 
     int width = 600, count = 0;
-    int x_axis = 0, y_axis = 100;
+    int x_axis = -200, y_axis = 100;
     setLayout(null);
     setSize(width, 700);
     tf.setBounds(0, 0, 600, 100);
-	tf.setText("Hello world");
     add(tf);
 
-    for (int i = 8; i >= 5; i--) {
+    for (int i = 8; i >= 0; i--) {
             count++;
+            x_axis += 200;
             button[i] = new Button(labels[i]);
       
             button[i].setBounds(x_axis, y_axis, 200, 80);
             add(button[i]);
             if (count == 3) {
-              x_axis = 0;
-              count = 1;
+              x_axis = -200;
+              count = 0;
               y_axis += 80;
             }
 
-      x_axis += 200;
     }
-    button[5] = new Button(labels[5]);
-    button[5].setBounds(0, y_axis, 200, 80);
-    add(button[5]);
-
     setVisible(true);
   }
 
